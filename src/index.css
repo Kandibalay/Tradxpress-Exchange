@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@theme {
+  --font-roboto: Roboto, sans-serif;
+}
+
+@layer base {
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-black);
+  }
+}

@@ -1,0 +1,13 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#hero{
+  background-image: url(./assets/Images/background-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 80%;
+  background-color: #7C20BE;
+}
+
