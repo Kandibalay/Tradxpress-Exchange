@@ -15,9 +15,11 @@ const Individual = () => {
 
     const onSubmit = (data) => {
         console.log(data);
-        reset();
+        localStorage.setItem('formData', JSON.stringify(data));
         navigate('/mailing', { replace: true }); 
         
+        reset();
+
     }
 
 

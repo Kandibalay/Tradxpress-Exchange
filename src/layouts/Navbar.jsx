@@ -50,7 +50,7 @@ const Navbar = () => {
        </NavLink>
        <div className="lg:hidden text-2xl flex items-center cursor-pointer" 
             onClick={openMenuBar}>
-                {showMenu ? <IoCloseOutline className='text-white'/> : <RxHamburgerMenu className='text-white'/>}
+                {showMenu ? <IoCloseOutline className='text-white w-[100px]'/> : <RxHamburgerMenu className='text-white'/>}
             </div>
         
         <div className={`lg:static absolute bg-[#7C20BE] top-16  ${

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 
 const Business = () => {
         const { register, 
@@ -7,9 +8,12 @@ const Business = () => {
             reset,
             formState: { errors } } = useForm();
 
+        const navigate = useNavigate(); 
 
         const onSubmit = (data) => {
             console.log(data);
+            localStorage.setItem('formData', JSON.stringify(data));
+            navigate('/mailing', { replace: true }); 
             reset();
         }
 
